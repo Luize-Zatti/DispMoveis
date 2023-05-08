@@ -68,6 +68,7 @@ export default function Mapa() {
          longitudeDelta: 0.05
        }}
       >
+        
       <Marker
         coordinate = {{
           //é um objeto
