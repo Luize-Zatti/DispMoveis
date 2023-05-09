@@ -25,7 +25,7 @@ export default function Principal() {
     { icon: 'smartphone', text: 'AppS' },
     { icon: 'user-plus', text: 'Cadastro' },
     { icon: 'log-in', text: 'Login' },
-    { icon: 'plus', text: 'Add' },
+    { icon: 'cards', text: 'Cards' },
   ];
 
 
@@ -65,7 +65,7 @@ export default function Principal() {
                 navigation.navigate('Login');
               }
               else {
-                // ação padrão para outros botões
+                navigation.navigate('Cards');
               }
             }}>
             {button.icon === 'calculator' ? (
@@ -77,7 +77,9 @@ export default function Principal() {
             ) : button.icon === 'map' ? (
               <MaterialCommunityIcons name="google-maps" size={30} color="#000" />
             ) : button.icon === 'domino-mask' ? ( // Alterando o ícone do sexto botão
-              <MaterialCommunityIcons name="domino-mask" size={30} color="#000" />
+            <MaterialCommunityIcons name="domino-mask" size={30} color="#000" />
+            ) : button.icon === 'cards' ? (
+              <MaterialCommunityIcons name="cards" size={30} color="#000" />
             ) : (
               <Feather name={button.icon} size={30} color="#000" />
             )}

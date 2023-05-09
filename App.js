@@ -19,6 +19,7 @@ import Tela2 from "./src/pages/Apps/Guincho/Instruções/Tela2";
 import Tela3 from "./src/pages/Apps/Guincho/Instruções/Tela3";
 import Tela4 from "./src/pages/Apps/Guincho/Instruções/Tela4";
 import Tela1 from "./src/pages/Apps/Guincho/Instruções/Tela1";
+import Cards from "./src/pages/Cards";
 
 const Stack = createNativeStackNavigator();
 
@@ -45,6 +46,7 @@ export default function App() {
                 <Stack.Screen name="Tela2" component={Tela2} options={{ headerShown: false }}/>
                 <Stack.Screen name="Tela3" component={Tela3} options={{ headerShown: false }}/>
                 <Stack.Screen name="Tela4" component={Tela4} options={{ headerShown: false }}/>
+                <Stack.Screen name="Cards" component={Cards}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
